@@ -6,6 +6,7 @@
 
 
 module instruction_decoder (
+       input clk,
        input [31:0] instruction,
        output [4:0] wr_reg_idx, r1_reg_idx, r2_reg_idx,
        output [6:0] opcode);
